@@ -1,0 +1,33 @@
+{
+  "vendor_name": "Acme Cloud Solutions Inc.",
+  "assessment_timestamp": "2025-05-20T14:32:00Z",
+  "final_risk_score": 71,
+  "risk_tier": "HIGH",
+  "approval_status": "PENDING_REVIEW",
+  "domain_scores": {
+    "secops": 74,
+    "compliance": 68,
+    "legal": 72
+  },
+  "score_weights_applied": {
+    "secops_weight": 0.35,
+    "compliance_weight": 0.35,
+    "legal_weight": 0.30
+  },
+  "executive_summary": "Acme Cloud Solutions presents a HIGH risk posture with a composite score of 71, driven primarily by the absence of a signed Data Processing Agreement and undocumented MFA enforcement across privileged accounts. Onboarding must be paused until a GDPR-compliant DPA is executed and SOC 2 Type II audit evidence dated within the last 12 months is provided.",
+  "top_critical_findings": [
+    "Data Processing Agreement (DPA) absent — GDPR Art. 28 violation",
+    "MFA not enforced for privileged access — undocumented in security policy",
+    "SOC 2 Type II certificate expired 14 months ago",
+    "Liability cap limited to 1-month fees — materially insufficient",
+    "No breach notification SLA specified in contract"
+  ],
+  "conditions_for_approval": [
+    "Execute GDPR-compliant DPA before any data sharing begins",
+    "Provide current SOC 2 Type II audit report (within 12 months)",
+    "Confirm MFA enforcement policy in writing with evidence",
+    "Negotiate liability cap to minimum 12 months of contract value"
+  ],
+  "recommended_next_action": "REQUEST_REMEDIATION",
+  "orchestrator_confidence": "HIGH"
+}
